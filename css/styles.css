@@ -300,8 +300,7 @@ img {
 .footer-form {
   margin: 0;
   padding: 0;
-  margin-left: 93px;
-  margin-top: 12px;
+  margin-left: auto;
   width: auto;
 }
 
@@ -319,6 +318,7 @@ img {
 }
 
 .footer-input {
+  width: 358px;
   padding: 15px 155px 15px 16px;
   outline: none;
   background-color: #2f303a;
@@ -348,6 +348,7 @@ img {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
+  cursor: pointer;
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
@@ -356,6 +357,11 @@ img {
   border: none;
   border-radius: 4px;
   color: var(--text-white);
+}
+
+.footer-submint:hover,
+.footer-submint:focus {
+  background-color: var(--hover-color);
 }
 
 .icon-send {
@@ -850,6 +856,8 @@ img {
 }
 
 .btn-modal {
+  top: 8px;
+  right: 8px;
   margin: 8px 8px 0 auto;
   display: flex;
   width: 30px;
@@ -857,11 +865,18 @@ img {
   border-radius: 50%;
   border-color: rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  position: absolute;
 
   background: var(--text-white);
   align-items: center;
   justify-content: center;
   color: rgba(0, 0, 0, 0.1);
+}
+
+.btn-modal:hover,
+.btn-modal:focus {
+  color: var(--accent-color);
+  background-color: var(--accent-color);
 }
 
 .icon-modal {
@@ -885,7 +900,7 @@ img {
 
 .modal-feeld {
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .modal-feeld:focus-within .modal-input {
@@ -924,7 +939,6 @@ img {
 
 .modal-comment {
   /* margin: 12px 16px; */
-  margin-bottom: 20px;
   padding-top: 11px;
   padding-left: 11px;
   padding-bottom: 11px;
@@ -949,11 +963,9 @@ img {
 
 .modal-box {
   display: flex;
-  margin-left: 12px;
+  justify-content: center;
   margin-bottom: 30px;
   align-items: center;
-  width: 423px;
-  height: 24px;
   font-size: 14px;
   line-height: calc(24 / 14);
   color: var(--title-text-color);
@@ -1027,6 +1039,11 @@ img {
   border: none;
   box-shadow: 0px 4px 4px rgb(33, 150, 243, 0.15);
   border-radius: 4px;
+}
+
+.form-btn:hover,
+.form-btn:focus {
+  background-color: var(--hover-color);
 }
 
 /*finish*/ ;
